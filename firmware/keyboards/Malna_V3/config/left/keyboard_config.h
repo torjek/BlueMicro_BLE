@@ -50,7 +50,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
     { k35, k34, k33, k32, k31, k30 }, \
 	{ k45, k44, k43, k42, k41, k40 } \
 }
-#else
+#els
 #define KEYMAP( \
       k00, k01, k02, k03, k04, k05,  \
       k10, k11, k12, k13, k14, k15,  \
