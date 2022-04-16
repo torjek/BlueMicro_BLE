@@ -34,7 +34,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 #define MANUFACTURER_NAME                   "NoelTorjek"                      /**< Manufacturer. Will be passed to Device Information Service. */
 
-vtrvtrgdrg
+
 #if KEYBOARD_SIDE == RIGHT
 #define KEYMAP( \
       k00, k01, k02, k03, k04, k05,  \
