@@ -17,6 +17,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
+
 #ifndef KEYBOARD_CONFIG_H
 #define KEYBOARD_CONFIG_H
 #include "hardware_config.h"
@@ -25,40 +26,54 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 //#define KEYBOARD_SIDE RIGHT
 // CHANGE THIS FOR THE KEYBOARD TO MATCH WHAT IS BEING FLASHED. OPTIONS: LEFT  RIGHT  SINGLE
 
-#define DEVICE_NAME_R                         "ErgoTravelBLE_R"                          /**< Name of device. Will be included in the advertising data. */
-#define DEVICE_NAME_L                        "ErgoTravelBLE_L"                          /**< Name of device. Will be included in the advertising data. */
-#define DEVICE_NAME_M                         "ErgoTravelBLE"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME_R                         "Malna_R"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME_L                        "Malna_L"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME_M                         "Malna"                          /**< Name of device. Will be included in the advertising data. */
 
-#define DEVICE_MODEL                        "ErgoTravelBLE_V1"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_MODEL                        "Malna_V3"                          /**< Name of device. Will be included in the advertising data. */
 
-#define MANUFACTURER_NAME                   "JPConstantineau.com"                      /**< Manufacturer. Will be passed to Device Information Service. */
+#define MANUFACTURER_NAME                   "NoelTorjek"                      /**< Manufacturer. Will be passed to Device Information Service. */
 
 
 #if KEYBOARD_SIDE == RIGHT
 #define KEYMAP( \
-      k00, k01, k02, k03, k04, k05, k06, \
-      k10, k11, k12, k13, k14, k15, k16, \
-      k20, k21, k22, k23, k24, k25, k26, \
-      k30, k31, k32, k33, k34, k35,  k36 \
-) \
-{ \
-    { k06, k05, k04, k03, k02, k01, k00 }, \
-    { k16, k15, k14, k13, k12, k11, k10 }, \
-    { k26, k25, k24, k23, k22, k21, k20 }, \
-    { k36, k35, k34, k33, k32, k31, k30 } \
+    L01, L02, L03, L04, L05,   R01, R02, R03, R04, R05, \
+    L11, L12, L13, L14, L15,   R11, R12, R13, R14, R15, \
+    L21, L22, L23, L24, L25,   R21, R22, R23, R24, R25, \
+    L31, L32, L33, L34, L35,   R31, R32, R33, R34, R35, \
+    L41, L42, L43, L44, L45,   R41, R42, R43, R44, R45  \
+    ) \
+    { \
+        {  L01, L02, L03, L04, L05 }, \
+        {  L11, L12, L13, L14, L15 }, \
+        {  L21, L22, L23, L24, L25 }, \
+        {  L31, L32, L33, L34, L35 }, \
+        {  L41, L42, L43, L44, L45 }, \
+        {  R05, R04, R03, R02, R01 }, \
+        {  R15, R14, R13, R12, R11 }, \
+        {  R25, R24, R23, R22, R21 }, \
+        {  R35, R34, R33, R32, R31 }, \
+		{  R45, R44, R43, R42, R41 } \
 }
 #else
 #define KEYMAP( \
-      k00, k01, k02, k03, k04, k05, k06, \
-      k10, k11, k12, k13, k14, k15, k16, \
-      k20, k21, k22, k23, k24, k25, k26, \
-      k30, k31, k32, k33, k34, k35,  k36 \
-) \
-{ \
-    { k00, k01, k02, k03, k04, k05, k06 }, \
-    { k10, k11, k12, k13, k14, k15, k16 }, \
-    { k20, k21, k22, k23, k24, k25, k26 }, \
-    { k30, k31, k32, k33, k34, k35, k36 } \
+    L01, L02, L03, L04, L05,   R01, R02, R03, R04, R05, \
+    L11, L12, L13, L14, L15,   R11, R12, R13, R14, R15, \
+    L21, L22, L23, L24, L25,   R21, R22, R23, R24, R25, \
+    L31, L32, L33, L34, L35,   R31, R32, R33, R34, R35, \
+    L41, L42, L43, L44, L45,   R41, R42, R43, R44, R45  \
+    ) \
+    { \
+        {  L01, L02, L03, L04, L05 }, \
+        {  L11, L12, L13, L14, L15 }, \
+        {  L21, L22, L23, L24, L25 }, \
+        {  L31, L32, L33, L34, L35 }, \
+        {  L41, L42, L43, L44, L45 }, \
+        {  R05, R04, R03, R02, R01 }, \
+        {  R15, R14, R13, R12, R11 }, \
+        {  R25, R24, R23, R22, R21 }, \
+        {  R35, R34, R33, R32, R31 }, \
+		{  R45, R44, R43, R42, R41 } \
 } 
 
 #endif
